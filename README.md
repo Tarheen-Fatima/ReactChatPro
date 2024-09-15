@@ -1,39 +1,57 @@
-# Node.js Chat App
+# ReactChatPro
 
-A simple demo chat app built on [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/) and [Socket.io](https://socket.io/).
+A modern real-time chat application built on [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/), and [Socket.io](https://socket.io/). ReactChatPro delivers seamless, responsive, and engaging chat experiences with WhatsApp-inspired features.
 
-## Demo
+Key Features
+- Real-Time Messaging: Users can chat instantly with real-time updates using WebSockets (Socket.IO).
+- Smooth Background Animations: Subtle, smooth background transitions provide a dynamic and engaging visual experience.
+- WhatsApp-Inspired UI: A user interface that mimics the familiar WhatsApp design, making it easy to use.
+- Message Timestamps: Display the time when each message is sent, ensuring clarity in conversation.
 
-https://owan-nodejs-chat-app.herokuapp.com
+# Pre-requisites
 
-## Pre-requisites
+To run this project locally for development or testing, ensure you have the following installed:
+- Node.js (Tested with version 10.16.3)
+- NPM (Comes with Node.js)
 
-To setup and run the project for local development / testing, you will need to use Node.js and NPM. I don't explicitly specify a minimum Node.js/NPM version for the app but I recommend going with whatever the latest LTS version is at the point in time you are setting things up. The minimum vesion of Node.js that I have tested this app on is **10.16.3**.
+You can download Node.js from [https://nodejs.org/en/download](https://nodejs.org/en/download/).
 
-Installers can be found here: [https://nodejs.org/en/download](https://nodejs.org/en/download/)
+Alternatively, you can use Node Version Manager (nvm) to manage multiple Node.js versions on your machine. Install it from [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
 
-Another option for installing Node is the **Node Version Manager** (**nvm**), which is a POSIX-compliant bash script to manage multiple active Node.js versions. Instructions for installing and using nvm to install Node and NPM can be found at [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
+# Installation
 
-## Installation
+Clone the repository from GitHub and install the required Node modules:
 
-The code for the chat app can be found at the public [GitHub](https://github.com/) repo [https://github.com/owanhunte/nodejs-chat-app](https://github.com/owanhunte/nodejs-chat-app). Either clone the repo to a local folder on your machine or download and extract the archive if you don't have [Git](https://git-scm.com/) installed.
-
-Open a terminal window session, or the equivalent on your machine, and enter the following command to install all the Node modules needed to run the app:
-
-```sh
+```bash
+git clone https://github.com/yourusername/ReactChatPro.git
+cd ReactChatPro
 npm install
 ```
 
-## Run the app in development mode
+This will install all necessary dependencies.
 
-After doing an `npm install` enter the following `npm run` command:
+# Running the App in Development Mode
 
-```sh
+To run the app in development mode, use the following command:
+
+```bash
 npm run dev
 ```
 
-This will start the app and set it up to listen for incoming connections on port 3000. Open up your browser of choice and go to the url [http://localhost:3000/](http://localhost:3000/) to start using the app itself. The `npm run dev` command automatically runs the app using the `nodemon` script so any changes you make to the app's javascript, CSS or HTML code will automatically restart it.
+This will start the server at port 3000. Open your browser and navigate to [http://localhost:3000/](http://localhost:3000/) to view the app. The development server is powered by `nodemon`, so any changes you make to the code will trigger an automatic reload.
 
-## Customizing the listening port
+# Technology Stack
 
-To configure the port that the app listens on at startup, copy the file `.env.example`, located at the root of the project, to `.env` and set an appropriate value for the `PORT` environment variable listed in the file. This must be done before the app is started.
+- Frontend: HTML5, CSS3
+- Backend: Node.js, Express.js
+- Real-time Communication: Socket.IO
+- Development Tool: Nodemon
+
+# Contributing
+
+Contributions are welcome! To contribute:
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/new-feature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/new-feature`).
+5. Open a pull request.
